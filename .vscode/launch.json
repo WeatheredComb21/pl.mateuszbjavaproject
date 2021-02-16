@@ -15,7 +15,8 @@
             "name": "Launch App",
             "request": "launch",
             "mainClass": "App",
-            "projectName": "pl.mateuszbjavaproject_bdadb51f"
+            "projectName": "pl.mateuszbjavaproject_bdadb51f",
+            "console": "externalTerminal",
             
         }
     ]
