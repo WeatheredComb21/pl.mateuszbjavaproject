@@ -24,6 +24,8 @@ public class App {
       }else{
         System.out.println("Jakaś inna liczba niż 3 i 2");
       }
+
+      TO DODAŁEM POZDRAWIAMC
       // */
 
 
