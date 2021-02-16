@@ -11,7 +11,7 @@ public class App {
       /* // KALKULATOR DWÓCH LICZB 
       System.out.println("Podaj pierwszą liczbę");
       int a = scanner.nextInt();
-      System.out.println("Podaj drugą licfzbę");      
+      System.out.println("Podaj drugą liczbę");      
       int b = scanner.nextInt();
       System.out.println(a+" + "+b+" = "+(a+b));      
       */
@@ -28,7 +28,35 @@ public class App {
       TO DODAŁEM POZDRAWIAMC
       // */
 
+      System.out.println("Podaj pierwszą liczbę");
+      int a = scanner.nextInt();
+      System.out.println("Podaj drugą liczbę");      
+      int b = scanner.nextInt();
+      System.out.println(a+" + "+b+" = "+(a+b));    
 
     scanner.close();
+     // KALKULATOR + / - 
+      
+     System.out.println("Liczba pierwsza");
+     int a = scanner.nextInt();
+
+     System.out.println("Podaj + lub -");
+     scanner.nextLine();
+     String o = scanner.nextLine();
+
+     System.out.println("Druga liczba");
+     int b = scanner.nextInt();
+
+     if(o.equals("+")){
+       System.out.println(a+" + "+b+" = "+(a+b));
+     }else if(o.equals("-")){
+       System.out.println(a+" + "+b+" = "+(a-b));
+     }else{
+       System.out.println("Nie podałeś + albo -");
+     }
+
+
+
+   scanner.close();
   }
 }
