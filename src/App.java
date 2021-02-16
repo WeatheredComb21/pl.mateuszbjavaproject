@@ -34,8 +34,7 @@ public class App {
       int b = scanner.nextInt();
       System.out.println(a+" + "+b+" = "+(a+b));    
 
-    scanner.close();
-     // KALKULATOR + / - 
+    scanner.close(); 
       
      System.out.println("Liczba pierwsza");
      int a = scanner.nextInt();
