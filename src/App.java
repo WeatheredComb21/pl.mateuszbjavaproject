@@ -51,7 +51,7 @@ public class App {
        System.out.println("Nie podałeś + albo -");
      } */
 
-     System.out.println("Podaj pierwszą liczbę:");
+     /* // jeszcze trudniejszy kalkulator System.out.println("Podaj pierwszą liczbę:");
      int L1 = scanner.nextInt();
      
     System.out.println("Podaj operator");
@@ -85,11 +85,44 @@ public class App {
        default:
        System.out.println("Nie może być takiego wyniku");
          break;
-     }
+     } */
 
 
-
-
-   scanner.close();
+   
+   
+   
+   
+   
+   
+   
+      String[][] dane = {  //Pytania i odpowiedzi, la familiada
+        {"Więcej niż jedno zwierzę to","stado","klucz","dwa","owca","lama"},
+        {"Sporty zaczynające się na s","sztafeta","skok o tyczce", "skoki narciarskie", "sumo", "szachy"}
+      };
+      int wynik = 0;
+  
+      for(int i = 0; i < dane.length; i++){  // Pytania pojawiające się na ekranie
+        System.out.println(dane[i][0]);
+        String odp = scanner.nextLine(); 
+        boolean isAnswerCorrect = false; 
+        
+        for(int o = 1; o < dane[i].length; o++){
+          
+          if(dane[i][o].equals(odp)){   // co się ma dziać jeżeli odpowiedź jest poprawna
+            isAnswerCorrect = true;
+            System.out.println( "Brzdęk" );
+            wynik += o*10;
+          }
+        }
+        
+        if(!isAnswerCorrect){  // Co się ma stać przy odpowiedzi fałszywej 
+          System.out.println("X");
+        }
+      }      
+      System.out.println("Twój wynik to "+wynik);  //Wynik
+ 
+   
+   
+     scanner.close();
   }
 }
