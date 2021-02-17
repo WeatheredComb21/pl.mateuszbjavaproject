@@ -32,6 +32,7 @@ public class App {
    // scanner.close(); 
   
       
+     /*
      System.out.println("Liczba pierwsza");
      int liczba = scanner.nextInt();
 
@@ -48,7 +49,44 @@ public class App {
        System.out.println(liczba+" + "+liczbaa+" = "+(liczba-liczbaa));
      }else{
        System.out.println("Nie podałeś + albo -");
+     } */
+
+     System.out.println("Podaj pierwszą liczbę:");
+     int L1 = scanner.nextInt();
+     
+    System.out.println("Podaj operator");
+    scanner.nextLine();
+    String o = scanner.nextLine(); 
+    
+     System.out.println("Podaj drugą liczbę:");
+     int L2 = scanner.nextInt();
+
+     switch (o) {
+       case "+":
+       System.out.println(L1+" + "+L2+" = "+(L1+L2));
+         break;
+         
+         case "-":
+         System.out.println(L1+" + "+L2+" = "+(L1-L2));
+           break;
+           
+           case "*":
+           System.out.println(L1+" + "+L2+" = "+(L1*L2));
+             break;
+             
+             case "/":
+             System.out.println(L1+" + "+L2+" = "+(L1/L2));
+               break;
+               
+               case "%":
+               System.out.println(L1+" + "+L2+" = "+(L1%L2));
+                 break;
+     
+       default:
+       System.out.println("Nie może być takiego wyniku");
+         break;
      }
+
 
 
 
