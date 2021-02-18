@@ -101,7 +101,7 @@ public class App {
       };
       int wynik = 0;
   
-      for(int i = 0; i < dane.length; i++){  // Pytania pojawiające się na ekranie
+      /* for(int i = 0; i < dane.length; i++){  // Pytania pojawiające się na ekranie
         System.out.println(dane[i][0]);
         String odp = scanner.nextLine(); 
         boolean isAnswerCorrect = false; 
@@ -122,7 +122,29 @@ public class App {
       System.out.println("Twój wynik to "+wynik);  //Wynik
  
    
-   
-     scanner.close();
+   */
+  Scanner sc = new Scanner(System.in);
+   int random = (int) (Math.random() * 101);
+   System.out.println("Spróbuj odgadnąć cyferkę, masz 5 szans");
+
+   int a = 1;
+
+   while(a <= 5 ){
+     System.out.println("To jest twoja "+a+" próba, podaj cyfrę");
+     int b = sc.nextInt();
+     if(b > random){
+       System.out.println("Niestety podałeś za dużą liczbę");
+     }else if(b < random){
+      System.out.println("Niestety podałeś za małą liczbę");
+      }else if(b == random){
+        System.out.println("Brawo! Trafiłeś");
+        break;
+      }
+      a++;
+
+
+
+   }
+
   }
 }
