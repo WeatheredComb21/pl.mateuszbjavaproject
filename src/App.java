@@ -95,13 +95,13 @@ public class App {
    
    
    
-      String[][] dane = {  //Pytania i odpowiedzi, la familiada
+     /* String[][] dane = {  //Pytania i odpowiedzi, la familiada
         {"Więcej niż jedno zwierzę to","stado","klucz","dwa","owca","lama"},
         {"Sporty zaczynające się na s","sztafeta","skok o tyczce", "skoki narciarskie", "sumo", "szachy"}
       };
       int wynik = 0;
   
-      /* for(int i = 0; i < dane.length; i++){  // Pytania pojawiające się na ekranie
+       for(int i = 0; i < dane.length; i++){  // Pytania pojawiające się na ekranie
         System.out.println(dane[i][0]);
         String odp = scanner.nextLine(); 
         boolean isAnswerCorrect = false; 
